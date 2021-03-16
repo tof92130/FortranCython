@@ -11,7 +11,7 @@ contains
     integer               :: i, j
     !<<<<<<<<<<<<<<<<<<<<<<<
     !>>>>>>>>>>>>>>>>>>>>>>>
-    !print '("Bonjour Fortran")'
+    print '("Bonjour Fortran")'
     !<<<<<<<<<<<<<<<<<<<<<<<
     !>>>>>>>>>>>>>>>>>>>>>>>
     do j=1,m
@@ -21,7 +21,7 @@ contains
     enddo
     !<<<<<<<<<<<<<<<<<<<<<<<
     !>>>>>>>>>>>>>>>>>>>>>>>
-    !print '("Au revoir Fortran")'
+    print '("Au revoir Fortran")'
     !<<<<<<<<<<<<<<<<<<<<<<<
     return
   end subroutine

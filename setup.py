@@ -21,9 +21,10 @@ system(shared_obj_comp)
 mes_extensions = Extension(
     name="pygfunc",
     sources=["pygfunc.pyx"],
-    extra_compile_args=['-fPIC', '-O3', '-lgfortran'],
+    #extra_compile_args=['-fPIC', '-O3', '-lgfortran'],
     extra_link_args=['gfunc.o', 'pygfunc.o'],
     library_dirs=["."],
+    libraries = ['gfortran'],           # need to include gfortran as a library
     include_dirs=[".",np.get_include()]
 )
 
